@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebijakan Privasi - ABCOM APPS</title>
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-soft: #eff6ff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: #ffffff;
+      padding: 48px 20px 56px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .header p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 12px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+    .container {
+      max-width: 860px;
+      margin: -28px auto 48px;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 28px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type {
+      margin-top: 0;
+    }
+    p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    li strong {
+      color: var(--text);
+    }
+    .info-box {
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #1e3a8a;
+    }
+    .footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 13px;
+      margin-top: 24px;
+    }
+    @media (max-width: 600px) {
+      .card { padding: 22px 18px; }
+      .header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Kebijakan Privasi (Privacy Policy)</h1>
+    <p>ABCOM APPS &mdash; Sistem Manajemen Tiket IT, Teknisi Lapangan &amp; Jadwal Maintenance</p>
+    <span class="badge">Terakhir Diperbarui: 18 November 2026</span>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <div class="info-box">
+        Kebijakan Privasi ini menjelaskan bagaimana <strong>ABCOM APPS</strong> mengumpulkan, menggunakan, menyimpan, dan melindungi data pengguna saat menggunakan aplikasi Android maupun layanan web terkait.
+      </div>
+
+      <h2>1. Informasi yang Kami Kumpulkan</h2>
+      <p>Untuk menjalankan fungsi manajemen laporan IT, penugasan teknisi, dan jadwal pemeliharaan perangkat, aplikasi dapat mengumpulkan informasi berikut:</p>
+      <ul>
+        <li><strong>Informasi Akun &amp; Identitas:</strong> Nama lengkap, alamat email atau username, peran pengguna (Admin/Teknisi), unit kerja/divisi/toko/gudang, serta nomor telepon/WhatsApp pelapor atau petugas yang diinput ke dalam sistem.</li>
+        <li><strong>Data Lokasi (GPS):</strong> Lokasi perangkat secara presisi maupun perkiraan (<code>ACCESS_FINE_LOCATION</code> dan <code>ACCESS_COARSE_LOCATION</code>) saat teknisi melakukan absensi kunjungan, check-in/check-out tugas di lapangan, atau pemetaan lokasi unit kerja.</li>
+        <li><strong>Kamera, Foto &amp; Penyimpanan Media:</strong> Akses kamera (<code>CAMERA</code>) dan galeri/penyimpanan perangkat (<code>READ_MEDIA_IMAGES</code> / penyimpanan eksternal) digunakan semata-mata untuk mengambil atau mengunggah foto bukti pekerjaan, lampiran kendala tiket, dokumentasi maintenance, serta menyimpan hasil ekspor laporan (PDF/Excel).</li>
+        <li><strong>Token Notifikasi &amp; Data Perangkat:</strong> Token Firebase Cloud Messaging (FCM) dan izin notifikasi (<code>POST_NOTIFICATIONS</code>) untuk mengirimkan pemberitahuan tugas baru, jadwal maintenance, dan pembaruan status secara real-time.</li>
+        <li><strong>Data Aktivitas Operasional:</strong> Riwayat tiket keluhan, catatan penanganan teknis, progres pekerjaan, serta log aktivitas sistem.</li>
+      </ul>
+
+      <h2>2. Penggunaan Informasi</h2>
+      <p>Seluruh data yang dikumpulkan digunakan secara terbatas untuk keperluan operasional internal, yaitu:</p>
+      <ul>
+        <li>Mengelola pembuatan, penugasan, pemantauan, dan penyelesaian tiket layanan IT serta jadwal maintenance rutin.</li>
+        <li>Memverifikasi kehadiran dan progres pekerjaan teknisi di lokasi unit kerja/toko/gudang.</li>
+        <li>Menghubungi pelapor atau teknisi terkait tindak lanjut kendala teknis.</li>
+        <li>Mengirimkan notifikasi real-time terkait penugasan dan status pekerjaan.</li>
+        <li>Menyusun laporan kinerja, riwayat pemeliharaan perangkat, serta analisa kendala berulang.</li>
+      </ul>
+
+      <h2>3. Penyimpanan &amp; Keamanan Data</h2>
+      <ul>
+        <li>Komunikasi data antara aplikasi dan server menggunakan protokol terenkripsi (HTTPS).</li>
+        <li>Kredensial sesi/token login pada perangkat disimpan menggunakan mekanisme penyimpanan lokal yang aman.</li>
+        <li>Kami tidak menjual, menyewakan, atau memperdagangkan data pribadi pengguna kepada pihak ketiga mana pun.</li>
+      </ul>
+
+      <h2>4. Layanan Pihak Ketiga</h2>
+      <p>Aplikasi menggunakan layanan infrastruktur tepercaya berikut hanya untuk mendukung fungsi utama aplikasi:</p>
+      <ul>
+        <li><strong>Google Firebase Cloud Messaging (FCM):</strong> Untuk pengiriman notifikasi push ke perangkat Android.</li>
+        <li><strong>Layanan Peta Open-Source (OpenStreetMap / Leaflet):</strong> Untuk menampilkan koordinat lokasi tugas pada peta tanpa pelacakan iklan.</li>
+      </ul>
+
+      <h2>5. Retensi &amp; Penghapusan Data</h2>
+      <p>Data akun dan riwayat pekerjaan disimpan selama pengguna aktif menggunakan sistem atau selama diperlukan untuk keperluan audit operasional perusahaan. Pengguna berhak meminta akses, pembaruan, atau penghapusan data akun melalui Administrator sistem kami.</p>
+
+      <h2>6. Privasi Anak di Bawah Umur</h2>
+      <p>ABCOM APPS adalah aplikasi operasional bisnis/internal dan tidak ditujukan untuk anak di bawah usia 13 tahun. Kami tidak secara sengaja mengumpulkan informasi pribadi dari anak-anak.</p>
+
+      <h2>7. Perubahan Kebijakan Privasi</h2>
+      <p>Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu apabila terdapat penambahan fitur atau penyesuaian regulasi. Tanggal pembaruan terbaru akan selalu tercantum di bagian atas halaman ini.</p>
+
+      <h2>8. Hubungi Kami</h2>
+      <p>Jika Anda memiliki pertanyaan, permintaan pembaruan data, atau permohonan penghapusan akun terkait Kebijakan Privasi ini, silakan hubungi tim pengelola melalui:</p>
+      <ul>
+        <li><strong>Pengelola Aplikasi:</strong> Tim IT / Administrator ABCOM APPS</li>
+        <li><strong>Email Dukungan:</strong> support@abcom.co.id</li>
+      </ul>
+    </article>
+
+    <p class="footer">&copy; 2026 ABCOM APPS. Seluruh hak cipta dilindungi.</p>
+  </main>
+</body>
+</html>
